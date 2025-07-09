@@ -4,8 +4,8 @@ export const system = createSystem(defaultConfig, {
   theme: {
     tokens: {
       fonts: {
-        heading: { value: "Atkinson Hyperlegible Next Variable" },
-        body: { value: "Atkinson Hyperlegible Next Variable" },
+        heading: { value: "Lexend Exa Variable" },
+        body: { value: "Lexend Exa Variable" },
       },
       colors: {
         lemon: {

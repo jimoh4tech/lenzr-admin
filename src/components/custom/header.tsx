@@ -8,12 +8,12 @@ import {
   Portal,
   Separator,
   Spacer,
+  Stack,
   Tabs,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import { Avatar } from "../ui/avatar";
-import { RiArrowDownSLine } from "react-icons/ri";
 // import { useCurrentUser } from "@/hooks/user.hooks";
 import { useLocation, useNavigate } from "react-router-dom";
 import { MenuContent, MenuItem, MenuRoot, MenuTrigger } from "../ui/menu";
@@ -32,7 +32,7 @@ export const Header = () => {
   };
 
   return (
-    <Box p={5} pb={0}>
+    <Box p={5} pb={1} boxShadow={"lg"}>
       <Flex justifyContent={"space-between"}>
         {location.pathname === "/" ? (
           <Text
@@ -136,10 +136,15 @@ export const Header = () => {
                   justifyContent={"center"}
                   alignItems={"center"}
                   cursor={"pointer"}
-                  gap={1}
+                  gap={3}
                 >
                   <Avatar src={""} />
-                  <RiArrowDownSLine />
+                  <Stack gap={1}>
+                    <Text fontSize={"sm"}>Anna Pen</Text>
+                    <Text fontSize={"xs"} color={"gray.500"}>
+                      Admin
+                    </Text>
+                  </Stack>
                 </Flex>
               </MenuTrigger>
             </HStack>
