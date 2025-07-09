@@ -47,7 +47,7 @@ export const Header = () => {
           <Spacer />
         )}
 
-        <Flex gap={5} alignItems={"center"}>
+        <Flex gap={2} alignItems={"center"}>
           <Popover.Root
             open={open}
             onOpenChange={(e: {
